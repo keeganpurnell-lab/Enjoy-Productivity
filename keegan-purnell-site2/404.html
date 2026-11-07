@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Page Not Found · Keegan Purnell</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/big-shoulders-display-normal-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{--paper:#f4f4ee;--ink:#0e1a33;--soft:#4a5468;--green:#3d7316;--accent:#4f8a1f;--line:#d3d6c8;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--paper:#0b1428;--ink:#eef0e6;--soft:#a7afbf;--green:#86c447;--accent:#8fd04a;--line:#25335a;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Instrument Sans","Helvetica Neue",Arial,sans-serif;display:grid;place-items:center;padding:24px max(20px,env(safe-area-inset-left,0px))}
+main{max-width:560px;text-align:left;display:grid;gap:18px}
+.board{display:flex;gap:8px;align-items:end}
+.sq{width:44px;height:44px;border-radius:10px;border:2px solid var(--line)}
+.sq.miss{border-style:dashed;border-color:var(--accent);display:grid;place-items:center}
+.sq.miss svg{width:24px;height:31px;animation:hop 1.6s ease-in-out infinite}
+@keyframes hop{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion: reduce){.sq.miss svg{animation:none}}
+.eyebrow{font-family:"DM Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin:0}
+h1{font-family:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(64px,14vw,120px);line-height:.88;margin:0}
+h1 span{color:var(--accent)}
+p{margin:0;font-size:18px;color:var(--soft);line-height:1.55}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+a.btn{display:inline-flex;align-items:center;font-weight:600;font-size:15px;padding:.8em 1.3em;border-radius:999px;border:2px solid var(--ink);text-decoration:none;color:var(--ink)}
+a.btn.solid{background:var(--ink);color:var(--paper)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <div class="board" aria-hidden="true">
+    <div class="sq"></div><div class="sq"></div><div class="sq miss"><svg viewBox="0 0 34 44"><circle cx="17" cy="8" r="7" fill="#6fae2b" stroke="#2f5a0f" stroke-width="1.5"/><path d="M11 16h12l-2 6c4 3 6 9 7 16H6c1-7 3-13 7-16z" fill="#6fae2b" stroke="#2f5a0f" stroke-width="1.5"/><ellipse cx="17" cy="39.5" rx="13" ry="3.5" fill="#4f8a1f" stroke="#2f5a0f" stroke-width="1.5"/></svg></div><div class="sq"></div>
+  </div>
+  <p class="eyebrow">Error 404</p>
+  <h1>Wrong <span>square.</span></h1>
+  <p>This page isn’t on the board. It may have moved, or the link has a typo.</p>
+  <div class="row">
+    <a class="btn solid" href="/">Back to start</a>
+    <a class="btn" href="/book#habits">Play the ten habits</a>
+  </div>
+</main>
+</body>
+</html>

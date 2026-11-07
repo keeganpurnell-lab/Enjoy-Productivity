@@ -1,0 +1,9 @@
+/book  /book.html  200
+/about  /about.html  200
+/writing  /writing.html  200
+/press  /press.html  200
+/first-lesson  /first-lesson.html  200
+/bookshelf  /bookshelf.html  200
+/privacy  /privacy.html  200
+/media  /about#media  301
+/media.html  /about#media  301
